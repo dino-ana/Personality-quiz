@@ -143,6 +143,7 @@ class QuestionViewController: UIViewController {
         let submitButton = UIButton(type: .system)
         submitButton.setTitle("Submit Answer", for: .normal)
         submitButton.addTarget(self, action: #selector(multipleAnswerButtonPressed), for: .touchUpInside)
+        configureSubmitButton(submitButton)
         multipleStackView.addArrangedSubview(submitButton)
         
     }
@@ -255,6 +256,27 @@ class QuestionViewController: UIViewController {
             stackView.removeArrangedSubview(view)
             view.removeFromSuperview()
         }
+    }
+
+    private func configureSubmitButton(_ button: UIButton) {
+        button.backgroundColor = UIColor(
+            red: 0.9607843137,
+            green: 0.8823529412,
+            blue: 0.7843137255,
+            alpha: 1
+        )
+        button.setTitleColor(
+            UIColor(
+                red: 0.2901960784,
+                green: 0.2313725490,
+                blue: 0.2039215686,
+                alpha: 1
+            ),
+            for: .normal
+        )
+        button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 16)
+            ?? UIFont.systemFont(ofSize: 16, weight: .semibold)
+        button.heightAnchor.constraint(equalToConstant: 34).isActive = true
     }
     
     /*

@@ -233,8 +233,12 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02x-rH-FCg">
-                                        <rect key="frame" x="0.0" y="204" width="343" height="30"/>
-                                        <state key="normal" title="Submit Answer"/>
+                                        <rect key="frame" x="0.0" y="204" width="343" height="34"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.88235294119999996" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                        <state key="normal" title="Submit Answer">
+                                            <color key="titleColor" red="0.2901960784" green="0.23137254900000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="multipleAnswerButtonPressed" destination="rIh-bg-AoZ" eventType="touchUpInside" id="7g9-Fl-AwB"/>
                                         </connections>
